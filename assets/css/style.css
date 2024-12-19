@@ -260,3 +260,54 @@ body {
 .nav-brand img[alt] {
     font-size: 0;
 }
+
+#citation {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #2563EB; /* pastel-blue 600 */
+    border-left: 4px solid #1D4ED8; /* pastel-blue 700 */
+    padding: 1rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    background: #E5F0FF; /* pastel-blue 100 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#citation span {
+    display: block;
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #609CFF; /* pastel-blue 400 */
+    margin-top: 0.5rem;
+}
+/* Ajoute un effet hover pour les icônes */
+.timeline-item .icon:hover {
+    background-color: #93bfff; /* Bleu clair */
+    transform: scale(1.1); /* Animation légère */
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  }
+  
+  /* Gère le style général pour le conteneur */
+  .timeline {
+    border-left: 2px solid #2563eb; /* Ligne verticale */
+    padding-left: 1rem;
+  }
+  
+  .timeline-item {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #2563eb; /* Rond bleu pour marquer les étapes */
+    border-radius: 50%;
+  }
