@@ -255,71 +255,109 @@
     nextButton.addEventListener('click', scrollToNext);
   </script>
 
-      <!-- Section Modalités de la formation -->
-  <section class="bg-white py-20">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <!-- Titre de la section -->
-      <h2 class="text-4xl font-bold text-pastel-blue-600 mb-6">Modalités de la formation</h2>
-      <p class="text-xl text-gray-600 mb-12">Une formation dynamique et pratique pour développer vos compétences en prise de parole.</p>
+<section id="modalites-formation" class="bg-white py-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Titre de la section -->
+    <h2 class="text-4xl font-bold text-pastel-blue-600 text-center mb-6">Modalités de la formation</h2>
+    <p class="text-xl text-gray-600 text-center mb-12">Une formation dynamique et pratique pour développer vos compétences en prise de parole.</p>
 
-      <!-- Contenu des points -->
-      <div class="space-y-12">
-
-        <!-- Bloc Modalités de la formation -->
-        <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
-          <div class="flex items-center justify-center mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 text-pastel-blue-600">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 7.5l-7.5 7.5-7.5-7.5" />
-            </svg>
-          </div>
-          <h3 class="text-2xl font-semibold text-pastel-blue-600 mb-4">Modalités de la formation</h3>
-          <p class="text-lg text-gray-600">Sur une demi-journée ou une journée complète. Cette formation se veut avant tout pratique.</p>
+    <!-- Grille Bento -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <!-- Modalités de la formation (Pleine largeur) -->
+      <div class="col-span-4 bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-center items-center">
+        <div class="flex items-center justify-center mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 text-pastel-blue-600">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 7.5l-7.5 7.5-7.5-7.5" />
+          </svg>
         </div>
+        <h3 class="text-2xl font-semibold text-pastel-blue-600 mb-4 text-center">Modalités de la formation</h3>
+        <p class="text-lg text-gray-600 text-center">Sur une demi-journée ou une journée complète. Cette formation se veut avant tout pratique.</p>
+      </div>
 
-        <!-- Bloc Infra-verbal / Paraverbal -->
-        <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
-          <div class="flex items-center justify-center mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 text-pastel-blue-600">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6l-3.5 3.5-3.5-3.5" />
-            </svg>
-          </div>
-          <h3 class="text-2xl font-semibold text-pastel-blue-600 mb-4">Infra-verbal / Paraverbal</h3>
-          <p class="text-lg text-gray-600">Apprenez à maîtriser votre communication non verbale et votre ton de voix pour renforcer votre impact.</p>
+      <!-- Infra-verbal / Paraverbal -->
+      <div class="col-span-2 bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-center items-center">
+        <div class="flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 text-pastel-blue-600">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6l-3.5 3.5-3.5-3.5" />
+          </svg>
         </div>
+        <h3 class="text-xl font-semibold text-pastel-blue-600 mb-2 text-center">Infra-verbal / Paraverbal</h3>
+        <p class="text-base text-gray-600 text-center">Apprenez à maîtriser votre communication non verbale et votre ton de voix pour renforcer votre impact.</p>
+      </div>
 
-        <!-- Bloc Ethos / Pathos / Logos -->
-        <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
-          <div class="flex items-center justify-center mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 text-pastel-blue-600">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-            </svg>
-          </div>
-          <h3 class="text-2xl font-semibold text-pastel-blue-600 mb-4">Ethos / Pathos / Logos</h3>
-          <p class="text-lg text-gray-600">Apprenez à utiliser les trois piliers de la rhétorique pour construire un discours captivant et convaincant.</p>
+      <!-- Ethos / Pathos / Logos -->
+      <div class="col-span-2 bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-center items-center">
+        <div class="flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 text-pastel-blue-600">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+          </svg>
         </div>
+        <h3 class="text-xl font-semibold text-pastel-blue-600 mb-2 text-center">Ethos / Pathos / Logos</h3>
+        <p class="text-base text-gray-600 text-center">Apprenez à utiliser les trois piliers de la rhétorique pour construire un discours captivant et convaincant.</p>
+      </div>
 
-        <!-- Bloc Mise en pratique -->
-        <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
-          <div class="flex items-center justify-center mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 text-pastel-blue-600">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v2m0-4v2m0-10v4m-4 4h8M4 12h2m12 0h2M9 6h6" />
-            </svg>
-          </div>
-          <h3 class="text-2xl font-semibold text-pastel-blue-600 mb-4">Mise en pratique</h3>
-          <p class="text-lg text-gray-600">Exercices pratiques pour renforcer les compétences théoriques et intégrer les enseignements dans des situations réelles.</p>
+      <!-- Mise en pratique -->
+      <div class="col-span-3 bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-center items-center">
+        <div class="flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 text-pastel-blue-600">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v2m0-4v2m0-10v4m-4 4h8M4 12h2m12 0h2M9 6h6" />
+          </svg>
         </div>
+        <h3 class="text-xl font-semibold text-pastel-blue-600 mb-2 text-center">Mise en pratique</h3>
+        <p class="text-base text-gray-600 text-center">Exercices pratiques pour renforcer les compétences théoriques et intégrer les enseignements dans des situations réelles.</p>
+      </div>
 
-        <!-- Bloc Exercice théâtral -->
-        <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
-          <div class="flex items-center justify-center mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 text-pastel-blue-600">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3 4v6a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V4m-18 0a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a5 5 0 0 1-5 5h-4a5 5 0 0 1-5-5V4" />
-            </svg>
-          </div>
-          <h3 class="text-2xl font-semibold text-pastel-blue-600 mb-4">Exercice théâtral</h3>
-          <p class="text-lg text-gray-600">Mise en situation et jeux de rôles pour améliorer l'expression orale et travailler l'improvisation.</p>
+      <!-- Exercice théâtral -->
+      <div class="col-span-1 bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-center items-center">
+        <div class="flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 text-pastel-blue-600">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 4v6a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V4m-18 0a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a5 5 0 0 1-5 5h-4a5 5 0 0 1-5-5V4" />
+          </svg>
         </div>
-
+        <h3 class="text-xl font-semibold text-pastel-blue-600 mb-2 text-center">Exercice théâtral</h3>
+        <p class="text-base text-gray-600 text-center">Mise en situation et jeux de rôles pour améliorer l'expression orale et travailler l'improvisation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Section Teambuilding-->
+  <section id="team-building" class="bg-white py-16 px-6">
+    <div class="container mx-auto">
+      <h2 class="text-pastel-blue-600 text-4xl font-bold mb-6 text-center">Team Building</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <!-- Texte et Objectifs -->
+        <div>
+          <h3 class="text-gray-600 text-2xl font-semibold mb-4">Objectifs :</h3>
+          <ul class="space-y-4 text-gray-600">
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-pastel-blue-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3-1.343 3-3S13.657 2 12 2 9 3.343 9 5s1.343 3 3 3zm0 0v3m0 0H7.5m4.5 0H16m0 0v7m0 0a4 4 0 01-8 0v-7m8 0H7.5" />
+              </svg>
+              <span>Souder et renforcer les liens entre collègues</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-pastel-blue-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 6v-8m0 8l-4-4m4 4l4-4" />
+              </svg>
+              <span>Travailler la cohésion de groupe</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-pastel-blue-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.25 6.25L3.5 12m0 0l6.75 5.75M3.5 12h17" />
+              </svg>
+              <span>Stimuler l'intelligence collective</span>
+            </li>
+          </ul>
+          <p class="mt-6 text-gray-600">
+            En utilisant l’art et le théâtre, nous développons les liens d’un collectif. Notre expérience nous permet de fédérer
+            le groupe rapidement, de le mettre en confiance pour apprendre à rire de soi, à prendre confiance en soi et à se dévoiler.
+          </p>
+          <p class="mt-4 text-gray-500 italic">Modalités : Sur une demi-journée ou journée complète.</p>
+        </div>
+        <!-- Image -->
+        <div class="flex justify-center">
+          <img src="assets/images/hef8.jpg" alt="Team Building" class="rounded-lg shadow-lg max-w-full h-auto">
+        </div>
       </div>
     </div>
   </section>
