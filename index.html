@@ -51,7 +51,8 @@
         </ul>
     </nav>
  
-    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+  <!-- Header-->
+  <header class="relative h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 w-full h-full">
             <div class="absolute inset-0 bg-black/50 z-10"></div>
             <img src="mission.jpg" alt="Background" class="w-full h-full object-cover blur-[2px]">
@@ -68,10 +69,10 @@
                 Réserver votre place
             </a>
         </div>
-    </header>
+  </header>
 
-    <!-- Citation -->
-    <section>
+    <!-- Section Citation -->
+  <section>
       <figure class="max-w-screen-md mx-auto text-center">
         <svg class="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
             <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
@@ -87,9 +88,10 @@
             </div>
         </figcaption>
       </figure>
-   </section>
+  </section>
 
-    <section id="apropos" class="py-32 bg-white">
+  <!-- Section à propos-->
+  <section id="apropos" class="py-32 bg-white">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-4xl md:text-5xl font-bold text-center mb-20 text-pastel-blue-600">Notre Mission</h2>
             <ul aria-label="User feed" role="feed" class="relative flex flex-col gap-12 py-12 pl-8 before:absolute before:top-0 before:left-8 before:h-full before:border before:-translate-x-1/2 before:border-slate-200 before:border-dashed">
@@ -151,7 +153,7 @@
                 Réponses à vos questions
             </a>       
         </div>
-    </section>
+  </section>
 
     <!-- Section Outils -->
   <section class="py-20">
@@ -250,6 +252,7 @@
     </div>
   </section>
 
+  <!-- Script pour Carrousel-->
   <script>
     const carousel = document.getElementById('carousel');
     const prevButton = document.getElementById('prev');
@@ -264,8 +267,8 @@
     nextButton.addEventListener('click', scrollToNext);
   </script>
 
-<!-- Section Modalité-->
-<section id="modalites-formation" class="bg-white py-20">
+  <!-- Section Modalité-->
+  <section id="modalites-formation" class="bg-white py-20">
   <div class="max-w-6xl mx-auto px-6">
     <!-- Titre de la section -->
     <h2 class="text-4xl font-bold text-pastel-blue-600 text-center mb-6">Modalités de la formation</h2>
@@ -329,7 +332,7 @@
       </div>
     </div>
   </div>
-</section>
+  </section>
   <!-- Section Teambuilding-->
   <section id="team-building" class="bg-white py-16 px-6">
     <div class="container mx-auto">
@@ -372,7 +375,7 @@
     </div>
   </section>
 
-    <section id="temoignages" class="py-32 bg-pastel-blue-50">
+  <section id="temoignages" class="py-32 bg-pastel-blue-50">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-4xl md:text-5xl font-bold text-center mb-20 text-pastel-blue-600">Témoignages</h2>
             <div class="grid md:grid-cols-3 gap-10">
@@ -414,10 +417,40 @@
                 </div>
             </div>
         </div>
-    </section>
+  </section>
 
+  <!-- Section À propos de nous -->
+  <section id="about-us" class="bg-gray-50 py-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Titre de la section -->
+    <h2 class="text-4xl font-bold text-pastel-blue-600 text-center mb-12">À propos de nous</h2>
+    
+    <!-- Grille pour les profils -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <!-- Profil Kévin -->
+      <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col items-center text-center">
+        <img src="assets/images/kevin.jpg" alt="Photo de Kévin" class="w-32 h-32 rounded-full mb-6 shadow-md">
+        <h3 class="text-2xl font-semibold text-pastel-blue-600 mb-4">Kévin</h3>
+        <p class="text-lg text-gray-600 mb-4">
+          Fort de son expérience professionnelle d’éducateur spécialisé, et de 10 ans de pratique du théâtre, Kévin jongle avec les arts pour faire grandir, accompagner et fédérer un groupe avec exigence et bienveillance.
+        </p>
+        <p class="text-lg text-gray-600 italic">Pratique de la philosophie</p>
+      </div>
 
-    <section id="contact" class="py-32 bg-white">
+      <!-- Profil Dylan -->
+      <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col items-center text-center">
+        <img src="assets/images/dylan.jpg" alt="Photo de Dylan" class="w-32 h-32 rounded-full mb-6 shadow-md">
+        <h3 class="text-2xl font-semibold text-pastel-blue-600 mb-4">Dylan</h3>
+        <p class="text-lg text-gray-600">
+          Grâce à son expertise dans la conception et l&#39;animation d&#39;ateliers, Dylan accompagne les enseignants en collège et lycée depuis plusieurs années.
+        </p>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- Section Contact-->
+  <section id="contact" class="py-32 bg-white">
         <div class="max-w-4xl mx-auto px-4">
             <h2 class="text-4xl md:text-5xl font-bold text-center mb-20 text-pastel-blue-600">Contactez-nous</h2>
             <form class="space-y-8 bg-pastel-blue-50 p-10 rounded-2xl shadow-lg">
@@ -440,7 +473,7 @@
                 </button>
             </form>
         </div>
-    </section>
+  </section>
 
     <footer class="bg-pastel-blue-600 text-white py-16">
         <div class="max-w-6xl mx-auto px-4 text-center">
