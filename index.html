@@ -165,6 +165,7 @@
           <p class="text-gray-600">Développez votre confiance en vous et votre capacité à prendre la parole en public lors de concours d’éloquence.</p>
         </div>
 
+
         <!-- Outil 2 (plus grand) -->
         <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 col-span-1 lg:col-span-2">
           <div class="flex justify-center mb-4">
@@ -201,6 +202,58 @@
       </div>
     </div>
   </section>
+
+  <!-- Section Galerie -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <!-- Titre de la section -->
+      <h2 class="text-4xl font-bold text-pastel-blue-600 text-center mb-6">Galerie</h2>
+      <p class="text-lg text-gray-600 text-center mb-10">
+        Découvrez nos moments forts et nos réalisations à travers cette galerie.
+      </p>
+
+      <!-- Carrousel -->
+      <div class="relative">
+        <!-- Conteneur principal du carrousel -->
+        <div id="carousel" class="carousel-container">
+          <!-- Items du carrousel -->
+          <img src="assets/images/hef1.jpg" alt="Image 1" class="carousel-item w-80 h-60 object-cover rounded-lg shadow-lg">
+          <img src="assets/images/hef2.jpg" alt="Image 2" class="carousel-item w-80 h-60 object-cover rounded-lg shadow-lg">
+          <img src="assets/images/hef3.jpg" alt="Image 3" class="carousel-item w-80 h-60 object-cover rounded-lg shadow-lg">
+          <img src="assets/images/hef4.jpg" alt="Image 4" class="carousel-item w-80 h-60 object-cover rounded-lg shadow-lg">
+          <img src="assets/images/hef5.jpg" alt="Image 5" class="carousel-item w-80 h-60 object-cover rounded-lg shadow-lg">
+          <img src="assets/images/hef6.jpg" alt="Image 6" class="carousel-item w-80 h-60 object-cover rounded-lg shadow-lg">
+          <img src="assets/images/hef7.jpg" alt="Image 7" class="carousel-item w-80 h-60 object-cover rounded-lg shadow-lg">
+          <img src="assets/images/hef8.jpg" alt="Image 8" class="carousel-item w-80 h-60 object-cover rounded-lg shadow-lg">
+          <img src="assets/images/hef9.jpg" alt="Image 9" class="carousel-item w-80 h-60 object-cover rounded-lg shadow-lg">
+          <img src="assets/images/hef10.jpg" alt="Image 10" class="carousel-item w-80 h-60 object-cover rounded-lg shadow-lg">
+          <img src="assets/images/hef11.jpg" alt="Image 11" class="carousel-item w-80 h-60 object-cover rounded-lg shadow-lg">
+        </div>
+
+        <!-- Boutons de navigation -->
+        <button id="prev" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-600 transition">
+          &#10094;
+        </button>
+        <button id="next" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-600 transition">
+          &#10095;
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const carousel = document.getElementById('carousel');
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+
+    // Fonction de navigation
+    const scrollToPrev = () => carousel.scrollBy({ left: -carousel.offsetWidth, behavior: 'smooth' });
+    const scrollToNext = () => carousel.scrollBy({ left: carousel.offsetWidth, behavior: 'smooth' });
+
+    // Écouteurs des boutons
+    prevButton.addEventListener('click', scrollToPrev);
+    nextButton.addEventListener('click', scrollToNext);
+  </script>
 
       <!-- Section Modalités de la formation -->
   <section class="bg-white py-20">
@@ -314,6 +367,7 @@
             </div>
         </div>
     </section>
+
 
     <section id="contact" class="py-32 bg-white">
         <div class="max-w-4xl mx-auto px-4">
