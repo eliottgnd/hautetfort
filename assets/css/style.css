@@ -321,3 +321,27 @@ body {
     scroll-snap-align: center;
     flex: none;
   }
+
+  /* Exemple CSS pour les proportions flexibles */
+.grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  @media (max-width: 640px) {
+    .grid {
+      grid-template-columns: 1fr; /* Une colonne sur petit écran */
+    }
+  }
+  
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .grid {
+      grid-template-columns: 1fr 1fr; /* Deux colonnes sur écran moyen */
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .grid {
+      grid-template-columns: 2fr 1fr 1fr; /* Bento sur écran large */
+    }
+  }
