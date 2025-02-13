@@ -345,3 +345,16 @@ body {
       grid-template-columns: 2fr 1fr 1fr; /* Bento sur écran large */
     }
   }
+
+  .a-atelier {
+    color: #3D7FFF;
+  }
+
+  .a-atelier:hover {
+    color: #1D4ED8;
+  }
+  
+  .citation {
+    background-color: white;
+  }
+
