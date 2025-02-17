@@ -421,3 +421,58 @@ body {
     animation-play-state: paused;
 }
 
+/* Style pour la section Nos Offres avec background */
+.section-nos-offres {
+    background: url('../../assets/images/fonds/fond.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    isolation: isolate; /* Crée un nouveau contexte d'empilement */
+}
+
+.section-nos-offres::before {
+    content: '';
+    position: absolute;
+    inset: 0; /* Équivalent à top: 0; right: 0; bottom: 0; left: 0; */
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: -1;
+}
+
+/* Assurer que les cartes ont un fond solide */
+.section-nos-offres .bg-white {
+    background-color: #ffffff;
+}
+
+/* Styles variés pour les sections */
+.section-title-gradient {
+    background: linear-gradient(90deg, #2563EB 0%, #3B82F6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section-title-dark {
+    color: #1E293B;
+    position: relative;
+}
+
+.section-title-dark::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #2563EB;
+    border-radius: 2px;
+}
+
+.section-title-accent {
+    color: #1D4ED8;
+    text-shadow: 2px 2px 4px rgba(37, 99, 235, 0.1);
+}
+
+.section-bg-gradient {
+    background: linear-gradient(180deg, #F0F5FF 0%, #FFFFFF 100%);
+}
+
