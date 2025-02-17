@@ -358,7 +358,7 @@ body {
     background-color: white;
   }
 
-/* Styles pour le slider */
+/* Styles pour le slider standard (3 images) */
 .slider-wrapper {
     width: 100%;
     overflow: hidden;
@@ -379,6 +379,16 @@ body {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
+/* Styles spécifiques pour le slider Théâtre-Forum (2 images) */
+#card4 .slider-container {
+    width: 200% !important;
+    animation: slideHorizontalTwo 6s ease infinite !important;
+}
+
+#card4 .slider-container img {
+    width: calc(50% - 0.5rem) !important;
+}
+
 @keyframes slideHorizontal {
     0% {
         transform: translateX(0);
@@ -388,6 +398,18 @@ body {
     }
     66% {
         transform: translateX(calc(-66.666% - 0.667rem));
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideHorizontalTwo {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(calc(-50% - 0.5rem));
     }
     100% {
         transform: translateX(0);
