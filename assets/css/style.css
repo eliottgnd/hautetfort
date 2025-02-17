@@ -358,3 +358,44 @@ body {
     background-color: white;
   }
 
+/* Styles pour le slider */
+.slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    padding: 0 0.5rem;
+}
+
+.slider-container {
+    display: flex;
+    animation: slideHorizontal 6s ease infinite;
+    width: 300%;
+    gap: 1rem;
+}
+
+.slider-container img {
+    width: calc(33.333% - 0.667rem);
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes slideHorizontal {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(calc(-33.333% - 0.333rem));
+    }
+    66% {
+        transform: translateX(calc(-66.666% - 0.667rem));
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Pause l'animation au survol */
+.slider-container:hover {
+    animation-play-state: paused;
+}
+
