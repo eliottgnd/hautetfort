@@ -1,0 +1,74 @@
+.quote-section {
+  padding: 5rem 0;
+  background-color: white;
+}
+
+.quote-container {
+  max-width: 48rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.quote-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 auto 1rem;
+  color: var(--pastel-blue-400);
+}
+
+.quote-text {
+  margin: 0 0 1.5rem;
+}
+
+.quote-content {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.4;
+  font-style: italic;
+  color: var(--gray-900);
+  margin: 0;
+}
+
+.quote-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.author-image {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.author-name {
+  font-weight: 600;
+  color: var(--gray-900);
+  font-style: normal;
+}
+
+.author-title {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  font-style: normal;
+}
+
+@media (min-width: 768px) {
+  .quote-content {
+    font-size: 2rem;
+  }
+  
+  .author-image {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+} 
