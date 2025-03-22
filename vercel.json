@@ -2,8 +2,8 @@
   "version": 2,
   "buildCommand": "",
   "outputDirectory": "dist",
-  "routes": [
-    { "src": "/[^.]+", "dest": "/", "status": 200 }
+  "rewrites": [
+    { "source": "/[^.]+", "destination": "/" }
   ],
   "headers": [
     {
