@@ -48,8 +48,7 @@ const About = () => {
         </h2>
         
         <p className="about-description">
-          L'association Haut & Fort a pour but d'aider chacun et chacune à exprimer ses idées, en transmettant les clés de compréhension logique et émotionnelle de l'autre.
-        </p>
+        L’association Haut et Fort a pour but de donner les clés de la prise de parole en public pour tous les âges. Elle a à cœur que chacun puisse déployer ses compétences pour exprimer qui il est.        </p>
 
         <div className="about-points">
           {points.map((point, index) => (

@@ -38,14 +38,15 @@ const Offers = () => {
     },
     {
       id: 'card3',
-      title: 'Concours d\'Éloquence',
+      title: 'Concours d\'Éloquence : Tout âge',
       image: '/assets/images/hef9.jpg',
       description: "Participez à nos concours pour développer votre talent d'orateur. Mesurez-vous à d'autres participants dans un cadre bienveillant.",
       details: [
         'Objectifs : Stimuler la créativité et la prise de parole en public.',
         'Inscription : En ligne via notre formulaire.',
         'Devis : Sur mesure selon vos besoins.',
-        'Publics : Écoles, Facultés, Entreprises...'
+        'Publics : Écoles, Facultés, Entreprises...',
+        'Modalités : Demi-journée à 3 jours, lien théorico-pratique.'
       ]
     },
     {
