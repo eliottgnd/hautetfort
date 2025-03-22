@@ -3,7 +3,7 @@
   "buildCommand": "",
   "outputDirectory": "dist",
   "rewrites": [
-    { "source": "/[^.]+", "destination": "/" }
+    { "source": "/:path((?!\\.).*)", "destination": "/" }
   ],
   "headers": [
     {
