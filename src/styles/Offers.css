@@ -205,6 +205,27 @@
   line-height: 1;
 }
 
+.offer-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+}
+
 /* Petits écrans mobiles */
 @media (max-width: 480px) {
   .offers-section {
@@ -246,6 +267,15 @@
   .offer-back {
     padding: 0.5rem 1.25rem 1.5rem;
   }
+  
+  .offer-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  
+  .gallery-image {
+    height: 100px;
+  }
 }
 
 /* Écrans moyens (tablettes) */
@@ -269,6 +299,14 @@
   .offer-title {
     font-size: 1.2rem;
   }
+  
+  .offer-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .gallery-image {
+    height: 110px;
+  }
 }
 
 /* Écrans larges */
@@ -287,6 +325,14 @@
   
   .offer-back {
     padding: 0.5rem 2rem 2.5rem;
+  }
+  
+  .offer-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .gallery-image {
+    height: 130px;
   }
 }
 

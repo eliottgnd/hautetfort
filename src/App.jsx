@@ -11,9 +11,9 @@ import Footer from './components/Footer';
 import SectionDivider from './components/SectionDivider';
 import ScrollToTop from './components/ScrollToTop';
 import ScrollProgress from './components/ScrollProgress';
-import Gallery from './pages/Gallery';
+import Gallery from './components/Gallery';
 import Home from './pages/Home';
-import './App.css';
+import './styles/App.css';
 
 // Composant réutilisable pour les titres de section
 export const SectionTitle = ({ children }) => (
@@ -35,25 +35,27 @@ function App() {
       <ScrollToTop />
       <ScrollProgress />
       <Navbar />
-      <Routes>
-        <Route path="/" element={
-          <>
-            <Header />
-            <SectionDivider />
-            <About />
-            <SectionDivider />
-            <CurrentEvent />
-            <SectionDivider />
-            <Offers />
-            <SectionDivider />
-            <Quote />
-            <SectionDivider />
-            <Founders />
-          </>
-        } />
-        <Route path="/gallery" element={<Gallery />} />
-      </Routes>
-      <SectionDivider />
+      <div className="main-content">
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Header />
+              <SectionDivider />
+              <Quote />
+              <SectionDivider />
+              <About />
+              <SectionDivider />
+              <CurrentEvent />
+              <SectionDivider />
+              <Offers />
+              <SectionDivider />
+              <Founders />
+              <SectionDivider />
+              <Gallery />
+            </>
+          } />
+        </Routes>
+      </div>
       <Footer />
     </div>
   );

@@ -14,7 +14,7 @@ const Quote = () => {
           <img className="author-image" src="/assets/images/Ciceron.jpg" alt="Ciceron" />
           <div className="author-info">
             <cite className="author-name">CICERON</cite>
-            <cite className="author-title">Avocat, Homme d'État & Philosophe Romain</cite>
+            <cite className="author-title">Homme d'État & Philosophe Romain</cite>
           </div>
         </figcaption>
       </figure>

@@ -69,32 +69,61 @@
   box-shadow: 0 4px 12px rgba(230, 57, 70, 0.2);
 }
 
+.gallery-section {
+  padding: 5rem 0;
+  background-color: #f9f7f5;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.gallery-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/images/pattern.png);
+  opacity: 0.03;
+  pointer-events: none;
+}
+
+.gallery-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1.5rem;
+  width: 100%;
+  margin-top: 3rem;
 }
 
 .gallery-item {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  aspect-ratio: 1;
   cursor: pointer;
-  aspect-ratio: 1 / 1;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .gallery-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
 .gallery-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s;
+  transition: transform 0.3s ease;
 }
 
 .gallery-item:hover .gallery-image {
@@ -254,20 +283,40 @@
   box-shadow: 0 6px 16px rgba(230, 57, 70, 0.3);
 }
 
-@media (min-width: 640px) {
+@media (max-width: 480px) {
+  .gallery-section {
+    padding: 3rem 0;
+  }
+
+  .gallery-container {
+    padding: 0 1rem;
+  }
+
   .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 481px) and (max-width: 767px) {
+  .gallery-section {
+    padding: 4rem 0;
+  }
+
   .gallery-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.25rem;
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 768px) {
+  .gallery-section {
+    padding: 6rem 0;
+  }
+
   .gallery-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
   }
 } 

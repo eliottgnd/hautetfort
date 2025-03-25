@@ -22,6 +22,10 @@ const Offers = () => {
         'Objectifs : Améliorer la communication interne et externe.',
         'Devis : Disponible sur demande.',
         'Durée : 3h à 2 jours selon le programme.'
+      ],
+      gallery: [
+        '/assets/images/hef5.jpg',
+        '/assets/images/hef6.jpg'
       ]
     },
     {
@@ -34,6 +38,10 @@ const Offers = () => {
         'Devis : Sur mesure selon vos besoins.',
         'Ateliers : 1 par mois, infos sur Facebook : Haut et Fort Eloquence.',
         'Public : Entrepreneurs, cadres et étudiants...'
+      ],
+      gallery: [
+        '/assets/images/hef11.jpg',
+        '/assets/images/hef12.jpg'
       ]
     },
     {
@@ -47,6 +55,10 @@ const Offers = () => {
         'Devis : Sur mesure selon vos besoins.',
         'Publics : Écoles, Facultés, Entreprises...',
         'Modalités : Demi-journée à 3 jours, lien théorico-pratique.'
+      ],
+      gallery: [
+        '/assets/images/hef9.jpg',
+        '/assets/images/hef10.jpg'
       ]
     },
     {
@@ -58,6 +70,10 @@ const Offers = () => {
         'Objectifs : Encourager l\'engagement collectif et la prise de recul.',
         'Public : Associations, entreprises et particuliers.',
         'Durée : Entre 3 et 10 séances.'
+      ],
+      gallery: [
+        '/assets/images/hef12.jpg',
+        '/assets/images/hef13.jpeg'
       ]
     },
     {
@@ -68,6 +84,10 @@ const Offers = () => {
       details: [
         'Objectifs : Souder et renforcer les liens entre collègues, cohésion de groupe, intelligence collective.',
         'Durée : Demi-journée ou journée complète'
+      ],
+      gallery: [
+        '/assets/images/hef8.jpg',
+        '/assets/images/hef9.jpg'
       ]
     }
   ];
@@ -101,6 +121,16 @@ const Offers = () => {
                 
                 {openCardId === offer.id && (
                   <div className="offer-back">
+                    <div className="offer-gallery">
+                      {offer.gallery.map((image, index) => (
+                        <img 
+                          key={index} 
+                          src={image} 
+                          alt={`${offer.title} - Image ${index + 1}`}
+                          className="gallery-image"
+                        />
+                      ))}
+                    </div>
                     <p className="offer-description">
                       {offer.description}
                     </p>
