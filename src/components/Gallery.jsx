@@ -1,9 +1,13 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import '../styles/Gallery.css';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isCondensed, setIsCondensed] = useState(true);
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+  const galleryRef = useRef(null);
 
   const images = [
     '/assets/images/hef1.jpg',
@@ -24,6 +28,27 @@ const Gallery = () => {
     '/assets/images/hef16.png',
     '/assets/images/hef17.jpg'
   ];
+
+  const handleTouchStart = (e) => {
+    setTouchStart(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe && currentIndex < images.length - 1) {
+      navigateImage('next');
+    } else if (isRightSwipe && currentIndex > 0) {
+      navigateImage('prev');
+    }
+  };
 
   const openModal = (image, index) => {
     setSelectedImage(image);
@@ -46,7 +71,26 @@ const Gallery = () => {
     <section className="gallery-section">
       <div className="gallery-container">
         <h2 className="section-title">Notre Galerie</h2>
-        <div className="gallery-grid">
+        <div className="gallery-controls">
+          <button 
+            className="gallery-toggle-button"
+            onClick={() => setIsCondensed(!isCondensed)}
+          >
+            <span className="button-icon">
+              {isCondensed ? '⌛' : '⏳'}
+            </span>
+            <span className="button-text">
+              {isCondensed ? 'Déplier la galerie' : 'Replier la galerie'}
+            </span>
+          </button>
+        </div>
+        <div 
+          className={`gallery-grid ${isCondensed ? 'condensed' : ''}`}
+          ref={galleryRef}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+        >
           {images.map((image, index) => (
             <div 
               key={index} 
