@@ -165,37 +165,44 @@
   -webkit-tap-highlight-color: transparent;
   opacity: 0.7;
   will-change: transform, opacity;
+  pointer-events: none;
 }
 
 .gallery-grid.condensed .gallery-item:nth-child(1) { 
   transform: translateX(-50%) translateX(0); 
   z-index: 10; 
-  opacity: 1; 
+  opacity: 1;
+  pointer-events: auto;
 }
 .gallery-grid.condensed .gallery-item:nth-child(2) { 
   transform: translateX(-50%) translateX(40px); 
   z-index: 9; 
-  opacity: 0.9; 
+  opacity: 0.9;
+  pointer-events: auto;
 }
 .gallery-grid.condensed .gallery-item:nth-child(3) { 
   transform: translateX(-50%) translateX(80px); 
   z-index: 8; 
-  opacity: 0.8; 
+  opacity: 0.8;
+  pointer-events: auto;
 }
 .gallery-grid.condensed .gallery-item:nth-child(4) { 
   transform: translateX(-50%) translateX(120px); 
   z-index: 7; 
-  opacity: 0.7; 
+  opacity: 0.7;
+  pointer-events: auto;
 }
 .gallery-grid.condensed .gallery-item:nth-child(5) { 
   transform: translateX(-50%) translateX(160px); 
   z-index: 6; 
-  opacity: 0.6; 
+  opacity: 0.6;
+  pointer-events: auto;
 }
 .gallery-grid.condensed .gallery-item:nth-child(6) { 
   transform: translateX(-50%) translateX(200px); 
   z-index: 5; 
-  opacity: 0.5; 
+  opacity: 0.5;
+  pointer-events: auto;
 }
 
 .gallery-grid.condensed .gallery-item img {
