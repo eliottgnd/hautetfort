@@ -10,6 +10,12 @@ const Gallery = () => {
   const galleryRef = useRef(null);
 
   const images = [
+    '/assets/images/Eloquentia Jules Ferry Janv 2023 (1).jpg',
+    '/assets/images/Eloquentia Jules Ferry Janv 2023 (2).jpg',
+    '/assets/images/Eloquentia Jules Ferry Janv 2023 (3).jpg',
+    '/assets/images/Eloquentia Jules Ferry Janv 2023 (4).jpg',
+    '/assets/images/Eloquentia Jules Ferry Janv 2023.jpg',
+    '/assets/images/Photo enfant de Eliott.jpg',
     '/assets/images/hef1.jpg',
     '/assets/images/hef2.jpg',
     '/assets/images/hef3.jpg',

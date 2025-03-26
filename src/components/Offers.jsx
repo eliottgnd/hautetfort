@@ -57,7 +57,7 @@ const Offers = () => {
         'Modalités : Demi-journée à 3 jours, lien théorico-pratique.'
       ],
       gallery: [
-        '/assets/images/hef9.jpg',
+        '/assets/images/Eloquentia Jules Ferry Janv 2023 (2).jpg',
         '/assets/images/hef10.jpg'
       ]
     },
