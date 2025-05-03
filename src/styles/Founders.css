@@ -195,4 +195,30 @@
   -moz-user-select: none;
   -ms-user-select: none;
   pointer-events: none;
+}
+
+.linkedin-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #0077B5, #00A0DC);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 119, 181, 0.2);
+}
+
+.linkedin-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 119, 181, 0.3);
+  background: linear-gradient(135deg, #006399, #0088b3);
+}
+
+.linkedin-icon {
+  width: 20px;
+  height: 20px;
 } 

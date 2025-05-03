@@ -6,14 +6,16 @@ const Footer = () => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
 
-  // Fonction pour remonter en haut de la page avec un défilement fluide
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const topElement = document.getElementById('top');
+    if (topElement) {
+      topElement.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   return (
@@ -63,10 +65,7 @@ const Footer = () => {
                   className="footer-link" 
                   onClick={(e) => {
                     e.preventDefault();
-                    window.scrollTo({
-                      top: 0,
-                      behavior: 'smooth'
-                    });
+                    scrollToTop();
                   }}
                 >
                   Accueil
@@ -83,7 +82,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/gallery" className="footer-link" onClick={scrollToTop}>
+                <Link to="/" className="footer-link" onClick={() => scrollToSection('gallery')}>
                   Galerie
                 </Link>
               </li>
